@@ -1,0 +1,13 @@
+.feed-nav-item {
+    a {
+      font-size: 1.2rem;
+      padding-bottom: 0.3rem;
+      color: $textLight;
+      padding: 0 1rem 0.2rem 1rem;
+      display: inline-block;
+      &.active {
+        color: $primary;
+        border-bottom: 2px solid;
+      }
+    }
+  }

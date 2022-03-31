@@ -1,0 +1,31 @@
+.profile {
+    background: $bgDark;
+    img {
+      width: 6rem;
+      height: 6rem;
+      border-radius: 50%;
+    }
+  }
+  .profile-wrapper {
+    position: relative;
+  }
+  .profile-name {
+    font-size: 1.5rem;
+    color: $textDark;
+  }
+  .profile-btn {
+    position: absolute;
+    right: 0;
+    bottom: -1.4rem;
+    border: 1px solid $textLight;
+    padding: 0.3rem 0.8rem;
+    border-radius: 3px;
+    color: $textLight;
+    font-size: 0.8rem;
+    font-weight: 600;
+    cursor: pointer;
+    &:hover {
+      background: $textLight;
+      color: $textLight - 60;
+    }
+  }
