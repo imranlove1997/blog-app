@@ -1,0 +1,79 @@
+.navbar {
+  padding: 0.75rem 0;
+  border-bottom: 1px solid $bgDark;
+  background-color: $bgLight;
+}
+.brand {
+  img {
+    width: 7rem;
+    animation: Brand-logo-spin infinite 20s linear;
+  }
+}
+@keyframes Brand-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.nav-item {
+  margin-left: 1.5rem;
+  a {
+    font-size: 1.2rem;
+    color: $textLight;
+    transition: color 200ms ease-in-out;
+    &:hover {
+      color: $primary;
+    }
+    &.active {
+      color: $textDark;
+    }
+  }
+}
+.toggle-btn,
+#toggle {
+  display: none;
+}
+@media screen and (max-width: 576px) {
+  .toggle-btn {
+    display: inline-block;
+    position: relative;
+    z-index: 99;
+  }
+  .brand {
+    position: relative;
+    z-index: 99;
+  }
+
+  @keyframes opacity {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @keyframes height {
+    0% {
+      height: 0;
+    }
+    100% {
+      height: 100%;
+      padding-top: 8rem;
+    }
+  }
+  .bar {
+    display: block;
+    width: 1.5rem;
+    height: 2px;
+    background-color: $primary;
+    margin: 5px 0;
+  }
+  #toggle:checked ~ .nav-menu {
+    display: flex;
+  }
+  #toggle:checked ~ .toggle-btn .bar {
+    background-color: #fff;
+  }
+}

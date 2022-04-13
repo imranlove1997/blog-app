@@ -1,0 +1,51 @@
+.btn {
+  padding: 0.9rem 1.5rem;
+  font-size: 1.2rem;
+  text-align: center;
+  display: inline-block;
+  border: 0;
+  color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 200ms ease-in-out;
+}
+.btn-primary {
+  background-color: $primary;
+  &:hover {
+    box-shadow: 4px 4px 10px rgba($primary, 0.5);
+  }
+}
+// Like Button
+.like-btn {
+  color: $primary;
+  font-size: 0.8rem;
+  border: 1px solid $primary;
+  padding: 0.4rem 0.5rem;
+  border-radius: 3px;
+  cursor: pointer;
+  letter-spacing: 0.2rem;
+  transition: all 100ms ease-in-out;
+  &:hover {
+    background-color: $primary;
+    color: $white;
+  }
+}
+// Read More Button
+.read-more-btn {
+  color: $primary;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+// Error Button
+.btn-error {
+  background: none;
+  border: 1px solid red;
+  color: red;
+  font-size: 1rem;
+  &:hover {
+    background-color: red;
+    color: $white;
+  }
+}
