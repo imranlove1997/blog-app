@@ -1,7 +1,8 @@
-import { Link } from "react-router-dom";
+import React from 'react';
+import { Link } from 'react-router-dom';
 
-export default function Post(props) {
-    const { author, createdAt, title, description, favoritesCount } = props;
+function Post(props) {
+  const { author, createdAt, title, description, favoritesCount } = props;
   return (
     <article className="post">
       <header className="flex justify-between item-center">
@@ -41,3 +42,5 @@ export default function Post(props) {
     </article>
   );
 }
+
+export default Post;

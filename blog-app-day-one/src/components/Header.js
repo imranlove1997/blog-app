@@ -1,8 +1,9 @@
-import { NavLink } from "react-router-dom";
+import React from 'react';
+import { NavLink } from 'react-router-dom';
 
-export default function Header() {
-    return (
-        <header className="navbar">
+function Header(props) {
+  return (
+    <header className="navbar">
       <div className="container flex justify-between item-center">
         <NavLink className="brand" to="/">
           <img src="/images/logo.svg" alt="Brand Logo" />
@@ -28,5 +29,7 @@ export default function Header() {
         </nav>
       </div>
     </header>
-    )
+  );
 }
+
+export default Header;

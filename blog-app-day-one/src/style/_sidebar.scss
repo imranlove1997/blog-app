@@ -1,24 +1,24 @@
 .sidebar {
-    padding: 1.5rem;
-    background-color: $bgLight;
+  padding: 1.5rem;
+  background-color: $bgLight;
+}
+.sidebar-heading {
+  font-size: 1rem;
+  color: $textDark;
+  margin-bottom: 0.5rem;
+}
+.tag {
+  display: inline-block;
+  background-color: $bgDark;
+  color: $textDark;
+  padding: 0.4rem 0.75rem;
+  margin: 0.5rem 0.5rem 0 0;
+  font-size: 0.8rem;
+  border-radius: 2rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 100ms ease-in-out;
+  &:hover {
+    background-color: $bgDark - 30;
   }
-  .sidebar-heading {
-    font-size: 1rem;
-    color: $textDark;
-    margin-bottom: 0.5rem;
-  }
-  .tag {
-    display: inline-block;
-    background-color: $bgDark;
-    color: $textDark;
-    padding: 0.4rem 0.75rem;
-    margin: 0.5rem 0.5rem 0 0;
-    font-size: 0.8rem;
-    border-radius: 2rem;
-    font-weight: 600;
-    cursor: pointer;
-    transition: all 100ms ease-in-out;
-    &:hover {
-      background-color: $bgDark - 30;
-    }
-  }
+}
