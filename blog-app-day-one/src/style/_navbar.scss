@@ -6,10 +6,19 @@
 .brand {
   img {
     width: 7rem;
+    animation: Brand-logo-spin infinite 20s linear;
+  }
+}
+@keyframes Brand-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
   }
 }
 .nav-item {
-  margin-left: 2rem;
+  margin-left: 1.5rem;
   a {
     font-size: 1.2rem;
     color: $textLight;

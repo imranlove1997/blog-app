@@ -9,12 +9,13 @@
 .sm-wrapper {
   max-width: 540px;
   margin: 0 auto;
+  padding: 0 2rem;
 }
 .md-wrapper {
   max-width: 968px;
   margin: 0 auto;
+  padding: 1rem 2rem;
 }
-
 // Flex properties
 .flex {
   display: flex;
@@ -78,7 +79,7 @@
   }
 }
 @media screen and (min-width: 576px) {
-  [class*="col"] {
+  [class*='col'] {
     display: grid;
     gap: 2rem;
   }

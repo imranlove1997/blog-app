@@ -18,6 +18,14 @@
       background-color: $bgDark;
     }
   }
+  .active {
+    background: $primary;
+    color: white;
+  }
+  .active:hover {
+    opacity: 0.8;
+    background-color: $primary;
+  }
 }
 .prev,
 .next {

@@ -34,7 +34,11 @@ class Sidebar extends React.Component {
       <aside className="sidebar">
         <h3 className="sidebar-heading">Popular Tags</h3>
         {tags.map((tag) => (
-          <span key={tag} className="tag">
+          <span
+            key={tag}
+            className="tag"
+            onClick={() => this.props.addTab(tag)}
+          >
             {tag}
           </span>
         ))}
